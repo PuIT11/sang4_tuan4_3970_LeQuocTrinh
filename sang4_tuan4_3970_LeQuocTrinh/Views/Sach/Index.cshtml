@@ -19,8 +19,8 @@
         <th> Số lượng tồn</th>
         <th></th>
     </tr>
-    @foreach (var item in Model)
-    {
+
+    @foreach (var item in Model){
         <tr>
             <td>@Html.DisplayFor(modelItem => item.maloai)</td>
             <td>@Html.DisplayFor(modelItem => item.tensach)</td>      
@@ -28,6 +28,7 @@
             <td>@Html.DisplayFor(modelItem => item.giaban)</td>
             <td>@Html.DisplayFor(modelItem => item.ngaycapnhat)</td>
             <td>@Html.DisplayFor(modelItem => item.soluongton)</td>
+
             <td>
                 @Html.ActionLink("Edit", "Edit", new { id = item.masach }) |
                 @Html.ActionLink("Detail", "Detail", new { id = item.masach }) |
